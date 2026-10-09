@@ -239,9 +239,9 @@ body.face-on, body.face-on * { cursor: none !important; }
 }
 .card:nth-child(2n) .card-media img.card-img { animation-name: kenburns-b; animation-duration: 32s; }
 .card:nth-child(3n) .card-media img.card-img { animation-name: kenburns-c; animation-duration: 29s; }
-@keyframes kenburns   { from { transform: scale(1) translate(0, 0); }     to { transform: scale(1.12) translate(-2%, 2%); } }
-@keyframes kenburns-b { from { transform: scale(1.1) translate(2%, -1%); } to { transform: scale(1) translate(-1%, 1%); } }
-@keyframes kenburns-c { from { transform: scale(1) translate(0, 2%); }     to { transform: scale(1.14) translate(1%, -2%); } }
+@keyframes kenburns   { from { transform: translate(-3%, 0); }   to { transform: translate(3%, 0); } }
+@keyframes kenburns-b { from { transform: translate(3%, 0); }    to { transform: translate(-3%, 0); } }
+@keyframes kenburns-c { from { transform: translate(-2.5%, 0); } to { transform: translate(2.5%, 0); } }
 
 /* ---------- Entrance animation ---------- */
 @keyframes rise {
