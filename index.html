@@ -7,13 +7,10 @@
   <meta name="description" content="Portfolio of Yuan Fang, a product designer crafting brands, websites and apps through bold visual systems and playful interaction." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Inter+Tight:wght@600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!-- Film grain overlay -->
-  <div class="grain" aria-hidden="true"></div>
-
   <!-- Open-mouth emoji that follows the cursor over .talk-btn -->
   <div class="cursor-face" id="cursorFace" aria-hidden="true">😮</div>
 
@@ -21,63 +18,57 @@
     <!-- ============ LEFT SIDEBAR ============ -->
     <aside class="sidebar">
       <div class="sidebar-inner">
-        <header class="intro">
-          <h1 class="name">Yuan<br /><em>Fang</em></h1>
-          <p class="role">Product Designer</p>
-          <p class="bio">I'm a designer crafting brands, websites, and apps through bold visual systems and playful interaction — based in Beijing, working worldwide.</p>
+        <div class="panel name-panel">
+          <h1 class="name">Yuan Fang</h1>
+          <p class="copy-line">© 2026 Yuan Fang</p>
+        </div>
 
+        <div class="panel bio-panel">
+          <p class="bio">I'm a designer crafting brands, websites, and apps through bold visual systems and playful interaction — based in Beijing, working worldwide.</p>
           <a class="talk-btn" href="mailto:hello@yuanfang.design">
             <span class="talk-label">Let's talk</span>
             <span class="talk-arrow" aria-hidden="true">↗</span>
           </a>
+        </div>
 
-          <div class="clock-block">
-            <div class="clock" id="clock">00:00:00</div>
-            <div class="tz">Beijing · GMT+8</div>
+        <div class="panel clock-panel">
+          <div class="clock-line"><span id="clock">00:00:00 PM</span><span class="tz"> / Beijing</span></div>
+        </div>
+
+        <div class="panel info-panel">
+          <div class="info-col">
+            <h2>Recognition</h2>
+            <ul>
+              <li>Awwwards — Honorable Mention</li>
+              <li>FWA — of the Day</li>
+              <li>CSSDA — Website of the Day</li>
+              <li>Behance — Featured Project</li>
+            </ul>
           </div>
-        </header>
-
-        <section class="side-section">
-          <h2 class="side-label">Recognition</h2>
-          <ul class="award-list">
-            <li><span class="award-name">Awwwards — Honorable Mention</span><span class="award-year">2025</span></li>
-            <li><span class="award-name">FWA — of the Day</span><span class="award-year">2025</span></li>
-            <li><span class="award-name">CSSDA — Website of the Day</span><span class="award-year">2024</span></li>
-            <li><span class="award-name">Behance — Featured Project</span><span class="award-year">2024</span></li>
-          </ul>
-        </section>
-
-        <section class="side-section">
-          <h2 class="side-label">Services</h2>
-          <ul class="plain-list">
-            <li>Brand Identity</li>
-            <li>Web Design</li>
-            <li>Product Design</li>
-            <li>Motion &amp; Interaction</li>
-          </ul>
-        </section>
-
-        <section class="side-section">
-          <h2 class="side-label">Socials</h2>
-          <ul class="social-list">
-            <li><a href="#">X <span aria-hidden="true">↗</span></a></li>
-            <li><a href="#">Instagram <span aria-hidden="true">↗</span></a></li>
-            <li><a href="#">Behance <span aria-hidden="true">↗</span></a></li>
-            <li><a href="#">Dribbble <span aria-hidden="true">↗</span></a></li>
-          </ul>
-        </section>
-
-        <footer class="side-footer">© 2026 Yuan Fang</footer>
+          <div class="info-col">
+            <h2>Services</h2>
+            <ul>
+              <li>Brand Identity</li>
+              <li>Web Design</li>
+              <li>Product Design</li>
+              <li>Motion &amp; Interaction</li>
+            </ul>
+          </div>
+          <div class="info-col">
+            <h2>Socials</h2>
+            <ul>
+              <li><a href="#">X <span aria-hidden="true">↗</span></a></li>
+              <li><a href="#">Instagram <span aria-hidden="true">↗</span></a></li>
+              <li><a href="#">Behance <span aria-hidden="true">↗</span></a></li>
+              <li><a href="#">Dribbble <span aria-hidden="true">↗</span></a></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </aside>
 
     <!-- ============ RIGHT: WORK GRID ============ -->
     <main class="work">
-      <div class="work-head">
-        <span class="side-label">Selected Work</span>
-        <span class="work-count">06 Projects — 2023 / 2026</span>
-      </div>
-
       <div class="grid">
         <!-- 01 -->
         <article class="card span-tall">
@@ -86,8 +77,8 @@
             <div class="card-overlay"><span class="view-case">View Case <span aria-hidden="true">↗</span></span></div>
           </div>
           <div class="card-meta">
-            <div class="card-title-row"><span class="card-index">01</span><h3>Aurora Bank</h3></div>
-            <p class="card-sub"><span class="tag">Digital Banking</span><span class="dot" aria-hidden="true">·</span><span class="year">2025</span></p>
+            <h3>Aurora Bank</h3>
+            <p class="card-sub">Digital Banking · 2025</p>
           </div>
         </article>
 
@@ -98,8 +89,8 @@
             <div class="card-overlay"><span class="view-case">View Case <span aria-hidden="true">↗</span></span></div>
           </div>
           <div class="card-meta">
-            <div class="card-title-row"><span class="card-index">02</span><h3>Neon District</h3></div>
-            <p class="card-sub"><span class="tag">Festival Identity</span><span class="dot" aria-hidden="true">·</span><span class="year">2024</span></p>
+            <h3>Neon District</h3>
+            <p class="card-sub">Festival Identity · 2024</p>
           </div>
         </article>
 
@@ -110,8 +101,8 @@
             <div class="card-overlay"><span class="view-case">View Case <span aria-hidden="true">↗</span></span></div>
           </div>
           <div class="card-meta">
-            <div class="card-title-row"><span class="card-index">03</span><h3>Orbit OS</h3></div>
-            <p class="card-sub"><span class="tag">Design System</span><span class="dot" aria-hidden="true">·</span><span class="year">2026</span></p>
+            <h3>Orbit OS</h3>
+            <p class="card-sub">Design System · 2026</p>
           </div>
         </article>
 
@@ -122,8 +113,8 @@
             <div class="card-overlay"><span class="view-case">View Case <span aria-hidden="true">↗</span></span></div>
           </div>
           <div class="card-meta">
-            <div class="card-title-row"><span class="card-index">04</span><h3>Stardust</h3></div>
-            <p class="card-sub"><span class="tag">AI Photo Editor</span><span class="dot" aria-hidden="true">·</span><span class="year">2025</span></p>
+            <h3>Stardust</h3>
+            <p class="card-sub">AI Photo Editor · 2025</p>
           </div>
         </article>
 
@@ -134,8 +125,8 @@
             <div class="card-overlay"><span class="view-case">View Case <span aria-hidden="true">↗</span></span></div>
           </div>
           <div class="card-meta">
-            <div class="card-title-row"><span class="card-index">05</span><h3>Velvet Skin</h3></div>
-            <p class="card-sub"><span class="tag">E-commerce</span><span class="dot" aria-hidden="true">·</span><span class="year">2024</span></p>
+            <h3>Velvet Skin</h3>
+            <p class="card-sub">E-commerce · 2024</p>
           </div>
         </article>
 
@@ -146,8 +137,8 @@
             <div class="card-overlay"><span class="view-case">View Case <span aria-hidden="true">↗</span></span></div>
           </div>
           <div class="card-meta">
-            <div class="card-title-row"><span class="card-index">06</span><h3>Tidepool</h3></div>
-            <p class="card-sub"><span class="tag">Travel Platform</span><span class="dot" aria-hidden="true">·</span><span class="year">2023</span></p>
+            <h3>Tidepool</h3>
+            <p class="card-sub">Travel Platform · 2023</p>
           </div>
         </article>
       </div>

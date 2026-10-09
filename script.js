@@ -364,14 +364,15 @@ function frame(now) {
 const clockEl = document.getElementById('clock');
 function tickClock() {
   try {
-    clockEl.textContent = new Date().toLocaleTimeString('en-GB', {
+    clockEl.textContent = new Date().toLocaleTimeString('en-US', {
       timeZone: 'Asia/Shanghai',
       hour: '2-digit',
       minute: '2-digit',
       second: '2-digit',
+      hour12: true,
     });
   } catch (err) {
-    clockEl.textContent = new Date().toLocaleTimeString('en-GB');
+    clockEl.textContent = new Date().toLocaleTimeString('en-US', { hour12: true });
   }
 }
 tickClock();
